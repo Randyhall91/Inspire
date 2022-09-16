@@ -1,7 +1,12 @@
-import { ValuesController } from "./Controllers/ValuesController.js";
+import { ImageController } from "./Controllers/ImageController.js";
+import { TodoController } from "./Controllers/TodoController.js";
+import { WeatherController } from "./Controllers/WeatherController.js";
 
 class App {
-  valuesController = new ValuesController();
+  imageController = new ImageController
+  todoController = new TodoController
+  weatherController = new WeatherController
+
 }
 
 window["app"] = new App();
