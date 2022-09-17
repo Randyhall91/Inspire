@@ -18,7 +18,7 @@ export class Todo {
   get todosTemplate() {
     return /*html*/`
     <div class="d-flex">
-      <input class="me-3" type="checkbox" name="completed" id="completed" onchange="app.todoController.isComplete('${this.id}')" ${this.completed ? 'checked' : ''}>
+      <input class="me-3" type="checkbox" name="completed" id="completed" value="false" onchange="app.todoController.isComplete('${this.id}')" ${this.completed ? 'checked' : ''}>
       <p class="me-auto">${this.description}</p>
       <i class="mdi mdi-delete" onclick="app.todoController.deleteTodo('${this.id}')"></i>
     </div>

@@ -7,10 +7,10 @@ import { SandboxServer } from "./AxiosService.js"
 class BackGroundService {
   async getBackGround() {
     const res = await SandboxServer.get('api/images')
-    // console.log(res.data);
+    // console.log('Get results', res.data);
 
     appState.background = new BackGround(res.data)
-    console.log(appState.background);
+    console.log('Appstate.background after model formating', appState.background);
   }
 
 

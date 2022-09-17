@@ -37,7 +37,7 @@ export class Weather {
 
   get Fahrenheit() {
     let temp = 9 / 5 * (this.temp - 273) + 3
-    console.log(temp);
+    // console.log(temp);
 
 
     return Math.round(temp)

@@ -11,8 +11,8 @@ class WeatherService {
 
     // @ts-ignore
     appState.weather = new Weather(res.data)
-    console.log(appState.weather);
+    // console.log(appState.weather);
   }
 
 }
-export const weatherService = new WeatherService
+export const weatherService = new WeatherService()
