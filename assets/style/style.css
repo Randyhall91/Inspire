@@ -12,3 +12,28 @@ body {
   background-repeat: no-repeat;
   background-color: rgb(44, 43, 43);
 }
+
+
+.quote-placement {
+  position: absolute;
+  right: 50%;
+  bottom: 75%;
+}
+
+.align-todo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.author-placement {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.time-placement {
+  position: absolute;
+  right: 50%;
+  bottom: 50%;
+}

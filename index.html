@@ -18,20 +18,33 @@
 <body>
 
   <main class="container-fluid">
-    <div class="row page-height">
+    <div class="row">
       <!-- SECTION Credits to Pic on left corner Weather on right corner -->
-      <div class="col-6 ">
-        <div id="author">
+      <div class="col-6">
+
+        <div class="card author-placement bg-opacity-50 text-bg-light ms-3 mt-3 p-3" id="author">
 
         </div>
       </div>
-      <div class="col-6 text-end pt-5 pe-5" id="weather">
+      <div class="col-6 d-flex justify-content-end">
+        <div class="card p-3 mt-3 bg-opacity-50 text-bg-light text-center" id="weather">
+
+        </div>
 
       </div>
     </div>
     <div class="row">
       <!-- SECTION Centered Time overlay -->
       <div class="col-12">
+        <div class="card bg-opacity-50 text-bg-light quote-placement p-3 text-center" id="quote">
+          <!-- <h4>Lorem ipsum dolor sit amet consectetur.</h4>
+          <p>-Author</p> -->
+
+        </div>
+        <div class="text-bg-light bg-opacity-50 time-placement">
+          <h1 id="time"></h1>
+
+        </div>
 
       </div>
 
@@ -39,7 +52,7 @@
     <div class="row d-flex flex-row-reverse align-items-start">
       <!-- SECTION Todo List -->
       <div class="col-4">
-        <div class="card">
+        <div class="card bg-opacity-50 text-bg-light align-todo me-4 mb-4">
           <div class="card-header">
             <div class="card-title d-flex">
               <h5 class="me-auto">Todo</h5>
@@ -50,7 +63,7 @@
             </div>
           </div>
           <div id="todo-list">
-            <div class="card card-body">
+            <div class="card card-body bg-opacity-50 text-bg-light">
               <!-- List of  Todo Items -->
               <div id="todos">
                 <!-- <input class="me-1" type="checkbox" name="checked" id="checked">

@@ -10,7 +10,7 @@ class BackGroundService {
     // console.log('Get results', res.data);
 
     appState.background = new BackGround(res.data)
-    console.log('Appstate.background after model formating', appState.background);
+    // console.log('Appstate.background after model formating', appState.background);
   }
 
 

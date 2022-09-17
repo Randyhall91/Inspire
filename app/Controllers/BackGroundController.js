@@ -5,18 +5,20 @@ import { setText } from "../Utils/Writer.js";
 
 function _drawBackGround() {
   let bg = appState.background
-  console.log('Draw: Background data pulled from appstate', appState.background);
+  // console.log('Draw: Background data at controller', appState.background);
+  // @ts-ignore
+  document.querySelector('body').style.backgroundImage = `url(${bg.img})`
 
-  // document.querySelector('body').style.backgroundImage = `url(${bg.img})`
-
-  // setText('author', bg.author)
+  // @ts-ignore
+  setText('author', bg.author)
 }
 
 
 export class BackGroundController {
   constructor() {
     this.getBackGround()
-    appState.on('background', _drawBackGround())
+    // setTimeout(() => { _drawBackGround(); }, 350);
+    appState.on('background', _drawBackGround)
 
   }
 

@@ -15,6 +15,9 @@ class AppState extends EventEmitter {
   weather = null
   /** @type {import('./Models/BackGround').BackGround | null} */
   background = null
+  /** @type {import('./Models/Quote').Quote | null} */
+  quote = null
+
 }
 
 export const appState = new Proxy(new AppState(), {

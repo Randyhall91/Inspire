@@ -8,6 +8,7 @@ import { SandboxServer } from "./AxiosService.js"
 class WeatherService {
   async getWeather() {
     const res = await SandboxServer.get('api/weather')
+    // console.log(res.data);
 
     // @ts-ignore
     appState.weather = new Weather(res.data)
