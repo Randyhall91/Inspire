@@ -1,9 +1,9 @@
-import { ImageController } from "./Controllers/ImageController.js";
+import { BackGroundController } from "./Controllers/BackGroundController.js";
 import { TodoController } from "./Controllers/TodoController.js";
 import { WeatherController } from "./Controllers/WeatherController.js";
 
 class App {
-  imageController = new ImageController
+  backGroundController = new BackGroundController
   todoController = new TodoController
   weatherController = new WeatherController
 

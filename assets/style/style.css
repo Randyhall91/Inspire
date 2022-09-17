@@ -4,3 +4,11 @@
 .page-height {
   height: 70vh;
 }
+
+
+body {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgb(44, 43, 43);
+}
