@@ -40,13 +40,15 @@ class TodoService {
     }
   }
   get totalCompleted() {
+    let complete = 0
     let total = 0
     appState.todos.forEach(t => {
       if (t.completed == true) {
         total++
       }
     })
-    return total
+    complete = appState.todos.length
+    return complete - total
   }
 
 }
